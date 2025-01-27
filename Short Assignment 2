@@ -1,0 +1,93 @@
+#drawing.py
+#Author name: Arses Prasai
+#Purpose: Short Assignment 2
+#1/ 14/ 2025
+from cs1lib import *
+
+#Helper function to fill the background
+def background_color():
+    clear()
+    set_fill_color(0.5,0.5,0.5)
+    draw_rectangle(0, 0, 400, 400)
+
+# helper functions that help set colors
+def set_fill_brown():
+    enable_fill()
+    set_fill_color(0.5, 0.4, 0.2)
+
+def set_fill_dark_grey():
+    enable_fill()
+    set_fill_color(0.8, 0.8, 0.8)
+
+def set_fill_black():
+    set_fill_color(0, 0, 0)
+
+def set_fill_light_gray():
+    set_fill_color(0.75, 0.75, 0.75)
+
+
+# Main function to make the entire drawing
+def draw_the_good_egg():
+
+    #Starting by calling the function to set the background color
+    background_color()
+
+    #draw the egg
+    set_fill_brown()
+    draw_ellipse(200, 200., 85, 110)
+
+    #draw the eyes on the egg
+    set_fill_dark_grey()
+    draw_circle(225, 230, 18)
+    draw_circle(175, 230, 18)
+
+    #draw pupils on the eyes
+    enable_fill ()
+    disable_stroke()
+
+    set_fill_color(0,1,1)
+    draw_circle(220, 230, 10)
+    draw_circle(180, 230, 10)
+
+    set_fill_black()
+    draw_circle(220, 230, 8)
+    draw_circle(180, 230, 8)
+
+    #draw glasses
+    disable_fill()
+    enable_stroke()
+    draw_circle(160, 230, 35)
+    draw_circle(240, 230, 35)
+    draw_line(195, 230, 205, 230)
+
+    #draw a smile
+    draw_circle(200, 270, 10)
+    enable_fill()
+    disable_stroke()
+    set_fill_brown()
+    draw_rectangle(190, 258, 20, 12 )
+
+    #draw the egg cart
+    set_fill_light_gray()
+    draw_rectangle (150,320, 100, 40)
+
+    #draw hands and legs
+    enable_stroke()
+    draw_line(190, 309, 190, 330)
+    draw_line(210, 309, 210, 330)
+    draw_line (210, 330, 215, 335)
+    draw_line(190, 330, 185, 335 )
+    draw_line(240, 297, 240, 310)
+    draw_line( 160, 297, 160, 310)
+
+    #Write the title at the top and my name at the bottom
+    draw_text("THE GOOD EGG", 120, 50)
+    draw_text("Arses Prasai", 15, 390)
+
+start_graphics(draw_the_good_egg)
+
+
+
+
+
+
