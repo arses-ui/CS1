@@ -1,0 +1,23 @@
+#how_rich.py
+#Author name: Arses Prasai
+#Purpose: Short Assignment 3 Problem
+#Date: 1/20/2025
+
+from cs1lib import *
+
+
+# Defining the variables
+BRUTUS_INITIAL_DEPOSIT= 1
+BRUTUS_INTEREST_RATE = 5
+YEAR= 2023
+i = 0
+brutus_wealth= BRUTUS_INITIAL_DEPOSIT # keeps track of Brutus’s changing wealth over the years
+
+
+# The loop goes until the given year, in this case, 2023
+while i < YEAR:
+    brutus_wealth =  brutus_wealth * ((BRUTUS_INTEREST_RATE + 100)/100 )
+    i = i + 1
+interest_amount= brutus_wealth - BRUTUS_INITIAL_DEPOSIT
+print("At year " + str(YEAR) + ", the balance is " + str(brutus_wealth))
+print("At year " + str(YEAR) + ", the interest earned is " + str(interest_amount))
