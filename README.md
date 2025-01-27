@@ -1,2 +1,3 @@
-## INTRODUCTION 
-Hi, this is a repository of all of my CS-1 projects and assignments. I created this repository with the intent of trackig my progress, as I start coding from scratch. 
+## INTRODUCTION
+Hi, welcome to my repository for all CS-1 projects and assignments. I created this repository to track my progress as I begin my coding journey from scratch.
+
